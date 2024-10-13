@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="ourworks.css">
+    <link rel="stylesheet" type="text/css" href="common.css">
+    <link rel="icon" href="images/Untitled.jpg" type="image/png">
+    <title>SRM Women Empowerment Club</title>
+  </head>
+  <body>
+    <div id = "header">
+      <div class = "container">
+        <nav>
+          <img src="images/logo-removebg-preview.png" class = "logo">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="ourworks.html">Our Works</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="fsh.html">FSH Women's Club</a></li>
+              <li><a href="achievers.html">Achievers</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="inspiration.html">Daily dose of Inspiration</a></li>
+              <li><a href="rights.html">Rights</a></li>
+              <li><a href="events.html">Workshops</a></li>
+              <li><a href="health.html">Health</a></li>
+              <li><a href="approachus.html">Approach Us</a></li>
+
+          </ul>
+      </nav>
+      <div class="header-text">
+        <h1>Our Works</h1>
+        <p>This page features some of the literary and art works done by the members of our club. </p>
+      <ul id="works-list"></ul>
+      </div>
+    </div>
+      </div>
+      
+    
+    <script>
+      // Define an array of works
+      var works = [
+        {
+          title: "Gender Discrimination: A Scourge on Society",
+          author: "Poem",
+          date: "Februay 14th,2023",
+          summary: "a small poem that reflects on gender-based discrimination and its effects on the society",
+          link: "https://medium.com/@srm.wec/gender-discrimination-a-scourge-on-society-ed268968f00"
+        },
+        {
+          title: "Women Empowerment: Breaking Barriers and Achieving Equality",
+          author: "Article",
+          date: "February 25th,2023",
+          summary: "Article on the very concept of women empowerment",
+          link: "https://medium.com/@srm.wec/women-empowerment-breaking-barriers-and-achieving-equality-72b1728fb072"
+        },
+        {
+          title: "Jane Eyre",
+          author: "Book Review",
+          date: "March 1st,2023",
+          summary: "Book review of 'Jane Eyre' by Charlotte Bronte",
+          link: "https://medium.com/@srm.wec/book-review-jane-eyr-e0c48df7819"
+        },
+        {
+          title: "Hidden Figures",
+          author: "Movie Review",
+          date: "March 8th,2023",
+          summary: "Movie review of Hidden Figures",
+          link: "https://medium.com/@srm.wec/movie-review-hidden-figures-f5991c26e148"
+        }
+
+      ];
+      
+      // Loop through the works and create an <li> element for each one
+      for (var i = 0; i < works.length; i++) {
+        var work = works[i];
+        var li = document.createElement("li");
+        var title = document.createElement("h2");
+        var author = document.createElement("p");
+        var date = document.createElement("p");
+        var summary = document.createElement("p");
+        var link = document.createElement("a"); // Create a new <a> element for the link
+        
+        title.innerHTML = work.title;
+        author.innerHTML = work.author;
+        date.innerHTML = work.date;
+        summary.innerHTML = work.summary;
+        link.innerHTML = "Read more"; // Set the text of the link
+        link.href = work.link; // Set the href attribute of the link to the value of the work's "link" property
+        
+        li.appendChild(title);
+        li.appendChild(author);
+        li.appendChild(date);
+        li.appendChild(summary);
+        li.appendChild(link); // Add the link element to the <li> element
+        
+        document.getElementById("works-list").appendChild(li);
+      }
+    </script>
+  </body>
+</html>

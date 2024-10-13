@@ -1,0 +1,106 @@
+/* Reset styles */
+
+  
+  /* Style the header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* Style the main section */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  /* Style the team member card */
+  .team-member {
+    background-color: #ffffffa2;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  /* Style the team member image */
+  .team-member img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+  }
+  
+  /* Style the team member name */
+  .team-member h2 {
+    color: #050000;
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  /* Style the team member position */
+  .team-member p {
+    color: #000000;
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  /* Style the social icons */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+  }
+  
+  .social-icons li {
+    margin: 0 10px;
+  }
+  
+  .social-icons li a {
+    color: #666;
+    font-size: 1.2rem;
+  }
+  
+  .social-icons li a:hover {
+    color: #333;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; 
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+   
+}
+.container{
+    padding: 5px 5%;
+}
+
+.header-text{
+    background-color: rgb(250, 235, 215, 0.85);
+    margin-top: 20%;
+    font-size : 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+    
+}
+.header-text h1,p{
+    color: rgb(124, 52, 11);
+    text-align: center;
+    
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

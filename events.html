@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="images/Untitled.jpg" type="image/png">
+    <title>SRM Women Empowerment Club</title>
+	<link rel="stylesheet" type="text/css" href="eventstyle.css">
+	<link rel="stylesheet" type="text/css" href="common.css">
+</head>
+<body>
+	<div id ="header">
+		<div class = "container">
+			<nav>
+				<img src="images/logo-removebg-preview.png" class = "logo">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="ourworks.html">Our Works</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="team.html">Team</a></li>
+					<li><a href="fsh.html">FSH Women's Club</a></li>
+					<li><a href="achievers.html">Achievers</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="inspiration.html">Daily dose of Inspiration</a></li>
+					<li><a href="rights.html">Rights</a></li>
+					<li><a href="events.html">Workshops</a></li>
+					<li><a href="health.html">Health</a></li>
+					<li><a href="approachus.html">Approach Us</a></li>
+		
+				</ul>
+			</nav>
+		<br><br>
+			<div class="card">
+				<h1>Debate by English Department</h1>
+				<p>British Parliamentary Debate on the stance "Clothes should not be gendered"<br> A team must consist of 3 members and the for/against the motion shall be declared on spot. Only 1 registration per team.</p>
+				<p id="event1-date"></p>
+				<p id="event1-location"></p>
+				<button id="register-button1" event-name="Event 1">Register</button>
+			</div>
+			<div class="card">
+				<h1>Embroidery Workshop by Fashion Department</h1>
+				<p></p>
+				<p id="event2-date"></p>
+				<p id="event2-location"></p>
+				<button id="register-button2" event-name="Event 2">Register</button>
+			</div>
+			<div class="card">
+				<h1>Conference on Cyber Bullying by Women Empowerment Club</h1>
+				<p id="event3-date"></p>
+				<p id="event3-location"></p>
+				<button id="register-button3" event-name="Event 3">Register</button>
+			</div>
+			<div class="card">
+				<h1>Solidarity March by Women Empowerment Club</h1>
+				<p id="event4-date"></p>
+				<p id="event4-location"></p>
+				<button id="register-button4" event-name="Event 4">Register</button>
+			</div>
+			  
+		
+			<div class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<h2>Registration Form</h2>
+					<form id="registration-form">
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="name" required>
+		
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" required>
+		
+						<label for="phone">Phone:</label>
+						<input type="tel" id="phone" name="phone" required>
+						
+						<input type="hidden" id="event-name" name="event_name">
+		
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+
+	<script src="eventapp.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<html>
+    <head>
+      <link rel="icon" href="images/Untitled.jpg" type="image/png">
+      <title>SRM Women Empowerment Club</title>
+        <link rel ="stylesheet" href = "fshstyle.css">
+        <link rel="stylesheet" type="text/css" href="common.css">
+    </head>
+    <body>
+      <div class="container">
+        <nav>
+          <img src="images/logo-removebg-preview.png" class = "logo">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="ourworks.html">Our Works</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="fsh.html">FSH Women's Club</a></li>
+              <li><a href="achievers.html">Achievers</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="inspiration.html">Daily dose of Inspiration</a></li>
+              <li><a href="rights.html">Rights</a></li>
+              <li><a href="events.html">Workshops</a></li>
+              <li><a href="health.html">Health</a></li>
+              <li><a href="approachus.html">Approach Us</a></li>
+  
+          </ul>
+      </nav>
+      <br><br>
+      <p>The FSH Women's  Club is an active group of students and staff that work extensively conducting events in the College of Science and Humanities. 
+        Various events,competitions,workshops and programs are conducted and various stalls are put throughout the year to educate and spread awareness about women empowerment and draw attention towards the issues faced by women in our society. 
+      </p>
+           <div class="card-container">
+  
+      <div class="card">
+        <div class="video-container" data-src="https://www.youtube.com/embed/1daFIzCpA20"></div>
+      </div>
+      <div class="card">
+        <div class="video-container" data-src="https://www.youtube.com/embed/Cz_Z5LVgJ24"></div>
+      </div>
+    </div>
+
+      </div>
+      
+  <script>
+    const videoContainers = document.querySelectorAll('.video-container');
+
+videoContainers.forEach((container) => {
+  const videoSrc = container.getAttribute('data-src');
+  const iframe = document.createElement('iframe');
+  iframe.setAttribute('src', videoSrc);
+  iframe.setAttribute('frameborder', '0');
+  iframe.setAttribute('allowfullscreen', '');
+  container.appendChild(iframe);
+});
+
+  </script>
+    </body>
+   
+  
+</html>

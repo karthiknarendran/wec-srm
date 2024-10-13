@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="images/Untitled.jpg" type="image/png">
+    <title>SRM Women Empowerment Club</title>
+    <link rel="stylesheet" href="approachstyle.css">
+    <link rel="stylesheet" type="text/css" href="common.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo-removebg-preview.png" class = "logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ourworks.html">Our Works</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="fsh.html">FSH Women's Club</a></li>
+                    <li><a href="achievers.html">Achievers</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="inspiration.html">Daily dose of Inspiration</a></li>
+                    <li><a href="rights.html">Rights</a></li>
+                    <li><a href="events.html">Workshops</a></li>
+                    <li><a href="health.html">Health</a></li>
+                    <li><a href="approachus.html">Approach Us</a></li>
+    
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>The Women Empowerment Club warmly extends its safe place to anyone who is undergoing any sort of troubles within the campus<br>
+                    It is without any doubt that anyone could go through harrassments of different kinds or uncomformtable situations, or encounter things that are supposed to be reported, and may not find the courage to approach the faculties or other authorities regarding it.<br>
+                Hence, the club is providing a safe network of people who are working to assist in such cases.</p><br><br>
+                <p>Please feel free to fill the details below to send any message or complaint and a trusted network of people working behind the screen will help in necassary ways to ensure that it reaches the right authority and gets resolved.</p>
+                <br><form id="studentForm" method="post" action="insert.php">
+
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+            
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+            
+                    <label for="phone">Phone:</label><br>
+                    <input type="tel" id="phone" name="phone" required><br>
+            
+            
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" required></textarea><br>
+            
+                    <input type="submit" value="Submit">
+            
+                </form>
+            
+                <div id="messageBox"></div>
+            
+                <script>
+                    const form = document.getElementById("studentForm");
+                    const messageBox = document.getElementById("messageBox");
+            
+                    form.addEventListener("submit", function(event) {
+                        event.preventDefault();
+                        const formData = new FormData(form);
+                        fetch(form.action, {
+                            method: form.method,
+                            body: formData
+                        })
+                        .then(response => response.text())
+                        .then(data => {
+                            if (data.trim() === "success") {
+                                messageBox.innerHTML = "<div style='color: green;'>Message sent successfully.</div>";
+                                form.reset();
+                            } else {
+                                messageBox.innerHTML = "<div style='color: red;'>" + data + "</div>";
+                            }
+                        });
+                    });
+                </script>
+            </div>
+        </div>   
+    </div>
+
+
+	
+
+</body>
+</html>
